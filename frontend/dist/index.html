@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro & Notes</title>
+    
+
+  <link rel="stylesheet" crossorigin href="/assets/index-D9wKS7Z7.css">
+</head>
+<body class="bg-gradient-to-br from-blue-900 to-gray-900 min-h-screen flex flex-col items-center justify-center text-white p-4">
+    
+    <!-- Pomodoro Timer -->
+    <div class="flex flex-col items-center mb-10">
+        <div class="relative w-56 h-56 flex items-center justify-center rounded-full bg-gray-800 shadow-lg border-4 border-yellow-400">
+            <span id="timer-icon" class="text-7xl">🚀</span>
+            <svg class="absolute w-full h-full" viewBox="0 0 100 100">
+                <circle id="progress-ring" cx="50" cy="50" r="45" fill="none" stroke="yellow" stroke-width="5" stroke-dasharray="283" stroke-dashoffset="0"/>
+            </svg>
+        </div>
+        <p id="timer" class="text-4xl font-bold mt-4">25:00</p>
+        <div class="mt-4 space-x-2">
+            <button id="startBtn" class="bg-green-500 px-4 py-2 rounded text-white">Старт</button>
+            <button id="resetBtn" class="bg-red-500 px-4 py-2 rounded text-white">Скинути</button>
+        </div>
+    </div>
+
+    <!-- Notes Section -->
+    <div class="w-full max-w-2xl bg-gray-800 p-6 rounded-lg shadow-md">
+        <h2 class="text-4xl font-bold mt-4">Нотатки</h2>
+        <div class="flex space-x-2 mb-4">
+            <input id="noteInput" class="w-full p-2 rounded text-black" type="text" placeholder="Введіть нотатку...">
+            <button id="addNoteBtn" class="bg-blue-500 px-4 py-2 rounded text-white">Додати</button>
+        </div>
+        <div id="notesContainer" class="grid grid-cols-3 gap-2"></div>
+    </div>
+
+    <!-- Підключення script.js -->
+    <script defer src="/src/script.js"></script>
+
+
+</body>
+</html>
