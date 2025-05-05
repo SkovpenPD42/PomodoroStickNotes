@@ -10,26 +10,7 @@ Pomodoro Focus Board — це веб-застосунок, створений д
 - Графік статистики дня (фокус / перерви)
 - Вбудований музичний плеєр
 - Повідомлення через нативні browser notifications
-
-
-**Інструкція запуску**
-
-📁 Крок 1. Клонування репозиторію
-
-```bash
-git clone https://github.com/SkovpenPD42/PomodoroStickNotes.git
-cd PomodoroStickNotes
-
-cd frontend
-npm install
-npm install react-chartjs-2 chart.js
-npm run dev
-
-cd ../backend
-npm install
-npm start
-
-
+- 
 Нотатки зберігаються через бекенд на Node.js/Express
 
 Підтримується додавання, видалення, редагування
@@ -47,4 +28,24 @@ Backend: Node.js, Express
 Дозвольте сповіщення у браузері для повної функціональності Pomodoro
 
 Не забудьте змінити CORS налаштування при деплої
+
+**Інструкція запуску**
+
+Крок 1. Клонування репозиторію
+
+```bash
+git clone https://github.com/SkovpenPD42/PomodoroStickNotes.git
+cd PomodoroStickNotes
+
+cd frontend
+npm install
+npm install react-chartjs-2 chart.js
+npm run dev
+
+cd ../backend
+npm install
+npm start
+
+
+
 
